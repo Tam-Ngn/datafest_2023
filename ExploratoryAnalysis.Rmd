@@ -9,5 +9,22 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### hello
+### Load Library
+
+```{r}
+library(readr)
+```
+
+### Upload Data
+```{r}
+attorney <- read_csv("attorneys.csv")
+attorney_time_entries <- read_csv("attorneytimeentries.csv")
+categories <- read_csv("categories.csv")
+clients <- read_csv("clients.csv")
+questions_posts <- read_csv("questionposts.csv")
+questions <- read_csv("questions.csv")
+state_sites <- read_csv("statesites.csv")
+sub_categories <- read_csv("subcategories.csv")
+```
+
 
